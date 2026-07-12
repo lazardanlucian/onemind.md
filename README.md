@@ -6,6 +6,8 @@ Most projects forget everything between sessions — decisions, rejected ideas, 
 
 No database. No service. No new dependencies. Just git.
 
+![example](example.gif)
+
 ## Why you'd want this
 
 - **"Why did we do it this way?"** — answered, forever, in `git log`.
@@ -22,22 +24,16 @@ curl -sO https://raw.githubusercontent.com/lazardanlucian/onemind.md/main/ONEMIN
 
 That drops the spec into your repo. Tell your agent to read it.
 
-## Adopt in 2 steps
+## How it auto-bootstraps
 
-### 1. Copy the file
+When your agent first reads `ONEMIND.md`, it checks whether the mind exists. If not, it initializes it — one git command, no files on disk, no config changes. From that point on, every session starts by reading the mind and ends by recording what was learned.
 
-Drop `ONEMIND.md` into your repo root. That's the spec — it tells your AI agents how to use the mind.
-
-### 2. Tell your agents
-
-Add this one line to your repo's `AGENTS.md` (or equivalent):
+Add the linker line to your `AGENTS.md` so the agent remembers to do this every session:
 
 ```
 This project's learning memory is an in-repo git mind on `refs/mind/main`
 — read `ONEMIND.md` and follow its protocol.
 ```
-
-That's it. On its next session, your agent will read the spec, see the mind needs initializing, and set it up automatically. No manual git commands required — the agent handles all the plumbing.
 
 ## What it feels like
 
