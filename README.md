@@ -10,7 +10,7 @@ No database. No service. No new dependencies. Just git.
 
 Tell your agent:
 
-> Implement github.com/lazardanlucian/onemind.md
+> Implement https://github.com/lazardanlucian/onemind.md
 
 ## What this is NOT
 
