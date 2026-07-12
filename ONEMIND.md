@@ -1,4 +1,4 @@
-# ONEMIND.md — turn any git repo into a persistent "mind", with zero files on disk
+# ONEMIND.md — turn any git repo into a persistent "mind", with no other dependencies.
 
 **A one-file convention that gives your project a memory, using only git.**
 
@@ -22,14 +22,9 @@ separated from the code it explains.
 - **Full history + diff + blame** on your thinking, for free, by a tool you already trust.
 - **Portable & lock-in-free.** It's plain git; anyone can read it, any agent can use it, nothing
   phones home.
-- **Zero disk footprint.** The mind is pure git metadata — no `mind/` folder, no `.gitignore`
-  edits, no helper script.
-
-## How it differs from the other variants
-- `MIND.md` isolates the mind in a *separate* `.mind/` git repo plus a `mind.ps1`/`mind` helper
-  script.
-- A folder-based `ONEMIND.md` kept mind files in a git-ignored `mind/` directory on disk.
-- **This version uses neither.** Thoughts are git objects on `refs/mind/main`, created entirely via
+- **Out of your way.** The mind is pure git metadata — no `mind/` folder, no `.gitignore`
+  edits, no helper script.
+- Thoughts are git objects on `refs/mind/main`, created entirely via
   plumbing (`hash-object`, `update-index`, `commit-tree`, `update-ref`). No `.mind/`, no `mind/`
   directory, no script. Your working tree stays exactly as it was.
 
@@ -57,20 +52,10 @@ Both forms leave your working directory and your code branch (`main`/`master`) c
 code commits are never touched. (Multi-person works fine — it's just a shared ref; CI won't fire on
 `refs/mind/*` pushes since those aren't `refs/heads/*` or tags.)
 
-## Structure lives in git, not on disk
+## Structure lives in git, not in folders
 **Commit trailers (the metadata layer).** End a commit message with key-value trailers (same
-mechanism as `Signed-off-by:`). Gives thoughts machine-readable structure with zero file schema:
-```
-mind: pass on generic med-reminder app
+mechanism as `Signed-off-by:`). Gives thoughts machine-readable structure with zero file schema.
 
-Saturated market, weak monetization; only viable with a sharp wedge
-(caregiver, B2B, or localized/Romania).
-
-Tags: medication, saas, vetoed
-Idea: medication-management-site
-Status: dead
-Confidence: high
-```
 Suggested vocabulary (all optional): `Tags:`, `Idea:`, `Decision:`, `Status:`
 (proposed|accepted|deprecated|dead), `Thread:`, `Confidence:`, `Related:` (a SHA).
 Recall by trailer via grep (see below). Note: `git log --format='%(trailers:key=Tags)'` only renders
