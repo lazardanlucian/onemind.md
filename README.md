@@ -6,7 +6,11 @@ Most projects forget everything between sessions — decisions, rejected ideas, 
 
 No database. No service. No new dependencies. Just git.
 
-![example](example.gif)
+## Try it now
+
+Tell your agent:
+
+> Implement github.com/lazardanlucian/onemind.md
 
 ## What this is NOT
 
@@ -24,12 +28,6 @@ and static. The memory it creates is infinite and lives entirely in `refs/mind/m
 - **"What did the last agent figure out?"** — the next agent picks up where it left off.
 - **Decisions with reasoning**, not just code diffs.
 - It travels with the repo. Clone it, you get the mind. Delete it, the mind goes with it.
-
-## Try it now
-
-Tell your agent:
-
-> Implement github.com/lazardanlucian/onemind.md
 
 ## Pruning
 
@@ -58,6 +56,8 @@ Once the mind is set up, your AI agents (or you) can:
 > "What approaches did we reject for the caching layer?"
 
 The agent searches the mind with `git log --grep` and `git grep`, finds the reasoning, and gives you the answer with full context.
+
+![example](example.gif)
 
 **Record new learnings in real time:**
 > "The rate limiter breaks under 10k concurrent connections — found during load testing."
