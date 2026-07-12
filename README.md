@@ -26,7 +26,7 @@ That drops the spec into your repo. Tell your agent to read it.
 
 ## Pruning
 
-Set a size limit in `AGENTS.md` (default 1GB). Agents check at session start and prune stale thoughts
+Set a size limit in `AGENTS.md` (default 1GB already set in ONEMIND.md). Agents check at session start and prune stale thoughts
 (`Status: dead`, `Status: deprecated`, old observations) when the mind grows past threshold.
 Pruned commits become unreachable; `git gc` reclaims the space. 90-day reflog safety net.
 
