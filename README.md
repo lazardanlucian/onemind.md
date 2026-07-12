@@ -19,11 +19,24 @@ No database. No service. No new dependencies. Just git.
 
 ## Try it now
 
+**Option A — Let your agent do it:**
+
+Tell your agent:
+> Implement https://raw.githubusercontent.com/lazardanlucian/onemind.md/main/ONEMIND.md
+
+The agent will fetch the spec, add the linker to `AGENTS.md`, and initialize the mind.
+
+**Option B — Download it yourself:**
+
 ```sh
 curl -sO https://raw.githubusercontent.com/lazardanlucian/onemind.md/main/ONEMIND.md
 ```
 
-That drops the spec into your repo. Tell your agent to read it.
+Then add this line to your `AGENTS.md`:
+```
+This project's learning memory is an in-repo git mind on `refs/mind/main`
+— read `ONEMIND.md` and follow its protocol.
+```
 
 ## Pruning
 
