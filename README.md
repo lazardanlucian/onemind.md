@@ -2,7 +2,8 @@
 
 **Give your repo a memory.**
 
-Most projects forget everything between sessions — decisions, rejected ideas, context. ONEMIND.md fixes that by providing a convention for agents to store decision, memories, contexts in git refs. It's a single file you drop into any git repo, and suddenly your project remembers: why you chose X over Y, what you tried and abandoned, what you learned.
+Most projects forget everything between sessions — decisions, rejected ideas, context. ONEMIND.md fixes that by providing a convention for agents to store decision, memories, contexts in git refs. It's a single file you drop into any git repo, and suddenly your project has the ability to contextually remember: why you chose X over Y, what you tried and abandoned, what you learned.
+This is NOT a context file!
 
 No database. No service. No new dependencies. Just git.
 
