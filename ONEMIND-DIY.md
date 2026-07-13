@@ -82,7 +82,8 @@ Anything a future session (which might be you, next week) would benefit from kno
 ### What to skip
 
 Routine progress, mechanical steps, and normal code changes — that's what commits and changelogs
-are for. The mind stores *reasoning*, not a work log.
+are for. Never record tokens, secrets, credentials, or PII. The mind stores *reasoning*, not a
+work log or a keychain.
 
 ## Examples
 
