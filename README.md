@@ -1,6 +1,6 @@
 # ONEMIND.md
 
-**A protocol that gives your repo free memory — using only git.**
+**A protocol that gives your repo builtin memory — using only git.**
 
 Most projects forget everything between sessions — decisions, rejected ideas, context. ONEMIND.md is a spec you drop into any repo that teaches your agent how to store memories as git objects on a hidden ref. The file itself is ~250 lines of instructions. The memory it creates is infinite — it lives in `refs/mind/main`, not in a context window.
 
