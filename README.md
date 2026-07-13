@@ -35,3 +35,5 @@ ONEMIND.md uses git plumbing (`commit-tree`, `update-ref`, `notes`, `bundle`) to
 a hidden ref (`refs/mind/main`). It never touches your branches — your commits, your working tree,
 and your `git status` are completely unaffected. See [`ONEMIND-DIY.md`](ONEMIND-DIY.md) for the
 abstract spec that works with any tool.
+
+![example](example.gif)
