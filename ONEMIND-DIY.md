@@ -89,7 +89,7 @@ work log or a keychain.
 
 ### Git
 
-See `ONEMIND.md` — uses git plumbing (commits on a hidden ref, index refs, notes, bundles).
+See [`ONEMIND.md`](ONEMIND.md) — uses git plumbing (commits on a hidden ref, index refs, notes, bundles).
 
 ### File-based
 
