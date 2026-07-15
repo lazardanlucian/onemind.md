@@ -13,7 +13,7 @@ Tell your agent:
 
 Or for any system (not just git):
 
-> Implement https://github.com/lazardanlucian/ONEMIND-DIY.md
+> Implement https://github.com/lazardanlucian/onemind.md/blob/main/ONEMIND-DIY.md
 
 ## Why
 
